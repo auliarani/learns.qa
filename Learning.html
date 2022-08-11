@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CRUD</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormsubmit()">
+                        <div>
+                            <label for="positionNow">Recent Position</label>
+                            <input type="text" name="positionNow" id="positionNow" >
+                        </div>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name"> 
+                        </div>
+                        <div>
+                            <label for="salary">Salary</label>
+                            <input type="text" name="salary" id="salary">
+                        </div>
+                        <div>
+                            <label for="tax">Tax</label>
+                            <input type="text" name="tax" id="tax"> 
+                        </div=>
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+
+                </td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Recent Position</th>
+                                <th>Name</th>
+                                <th>Salary</th>
+                                <th>Tax</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <script type="text/javascript" src="script.js"></script>
+            </tr>
+        </table>
+    </body>
+</html>
